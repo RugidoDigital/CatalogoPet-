@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Catálogo Pet+</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header / Barra de navegação -->
+    <header class="navbar container px-6">
+      <div class="logo">
+          <a href="index.html" class="navbar-brand">
+            <img width="70px" src="assets/ICONE.png" alt="Pet+"> 
+          </a>
+      </div>
+      <div class="search-bar search-form-custom-top-header">
+        <div class="input-group" style="border-radius: 20px; border: 1px solid #bdbdbd; margin: 5px;">
+          <input id="inputPesquisa" type="text" class="form-control" placeholder="Pesquisar..." style="border: 0; border-radius: 20px;">
+          <span id="basic-addon1" type="button" class="btn btn-success rounded-circle" style="width: 40px; height: 40px; background-color: #0dcaf0; border: 0" onclick="loja.metodos.obterItensPorPesquisa()">
+            <i class="bi bi-search"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Ícones -->
+      <div class="icons">
+        <form style="display: flex; justify-content: center; text-align: center;" action="carrinho.html">
+            <button type="submit" class="btn btn-info btn-group text-white">
+                <i class="bi bi-cart-fill"></i>
+                <span class="d-none d-lg-inline">Carrinho </span>
+                <span class="badge text-bg-danger" id="badgeCart"></span>
+            </button>
+            <a href="#" target="_blank" class="btn btn-info text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank" class="btn btn-info text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank" class="btn btn-info text-white"><i class="bi bi-whatsapp"></i></a>
+        </form>
+      </div>
+    </header>
+    
+    <!-- Header-->
+    <button class="float-button custom-button btn-lg" type="submit" id="float-button-carrinho">
+      <i class="bi-cart-fill me-1"></i>
+      <span class="badge" id="badgeCartFloat">0</span>
+    </button>
+
+    
+
+    <!-- CAROUSEL -->
+    <!-- onchange="showSlides()" -->
+    <!-- <div class="numbertext">3 / 3</div> -->
+    <section id="Slideshow">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/assets/carousel_img/petzap.jpg" class="carousel-image img-fluid">
+        </div>
+        <!-- CAROUSEL-BUTTONS -->
+        <div class="text" style="text-align:center">
+          <span class="dot d-none" onclick="currentSlide(1)"></span> 
+        </div>
+      </div>
+    </section>
+    
+    <section id="filter" class="categories">
+      <style>
+        /* Estilização do botão */
+        .styled-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /*padding: 10px 0px;Azul padrão 
+            background-color: #007bff;  */
+            color: #000;
+            border: none;
+            
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            overflow: hidden; /* Para esconder o ícone ao pular */
+            position: relative;
+        }
+
+
+        /* Estilização do ícone */
+        .styled-button .icon {
+            display: inline-block;
+            font-size: 30px;
+            transition: transform 0.3s ease;
+            border-radius: 30px;
+            z-index: 10;
+        }
+        /* Cor mais escura no hover */
+        /* Efeito de hover no botão */
+        /* .styled-button:hover {
+            
+        } */
+        
+        /* Efeito de "salto" no ícone */
+        .styled-button:hover .icon {
+            transform: translateY(-8px); /* Sobe o ícone */
+        }
+      </style>
+      <nav id="filtro" class="container navbar navbar-expand-lg" style="z-index: 2;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100">
+              <!-- <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(0)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span>
+                    <b class="text-dark">Todos</b>
+                  </a>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(1)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span></i>
+                    <b class="text-danger">Cachorro</b>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(2)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span></i>
+                    <b style="color: gold">Gatos</b>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(3)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span></i>
+                    <b class="text-info">Pássaros</b>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(4)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span></i>
+                    <b style="color: orange">Peixes</b>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group styled-button">
+                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(5)">
+                    <span>
+                      <i class="icon bi bi-cart"></i>
+                    </span></i>
+                    <b style="color: cornflowerblue">Categorias</b>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    </section>
+    
+  
+
+    <style>/* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Basic styling */
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .categories-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10; /* Certifique-se de que está acima de outros elementos */
+        background-color: #fff; /* Adicione uma cor de fundo para evitar sobreposição com o conteúdo do carousel */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+      }
+
+      /* Estilos Gerais */
+      .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          background-color: #fff;
+      }
+
+      .header-content {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          flex-wrap: wrap; /* Permite quebra de linha para elementos internos */
+      }
+
+      .logo {
+          flex: 1;
+      }
+
+      .search-bar {
+          /* flex: 2; */
+          display: flex;
+          justify-content: center;
+      }
+
+      .icons {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+      }
+
+      /* Estilos para telas menores */
+      @media (max-width: 768px) {
+          .search-bar {
+              order: 2; /* Posiciona a barra de pesquisa abaixo */
+              width: 100%; /* Barra de pesquisa ocupa a largura completa */
+              margin-top: 15px;
+          }
+
+          .logo, .icons {
+              order: 1; /* Mantém o logo e ícones na mesma linha */
+          }
+
+          .header-content {
+              flex-direction: column;
+              align-items: center;
+          }
+      }
+
+      
+      .navbar-custom-top-header {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px;
+        background-color: #F8F9FA;
+        color: #fff;
+        align-items: center;
+        z-index: 1;
+      }
+      
+      .nav-links-custom-top-header {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* Alterado para space-around */
+        align-items: center; /* Centraliza verticalmente */
+        margin-bottom: 0 !important;
+      }
+      
+      .nav-links-custom-top-header li {
+        margin-right: 10px;
+        padding: 5px !important;
+        max-width: 150px; /* Defina a largura máxima desejada */
+        white-space: nowrap; /* Impede que o texto quebre em linhas */
+        /*overflow: hidden;  Oculta o conteúdo que ultrapassa a largura máxima */
+        /*text-overflow: ellipsis;  Adiciona reticências (...) para indicar que há mais conteúdo */
+      }
+
+      .nav-links-custom-top-header li :hover {
+        /*background-color: #2a2de5;  Cor de fundo da badge */
+         /*color: #fff; Cor do texto da badge */
+        border-radius: 10px; /* Bordas arredondadas da badge */
+      }
+      
+      .nav-links-custom-top-header li:last-child {
+        margin-right: 0;
+      }
+      
+      .nav-links-custom-top-header a {
+
+        /*color: #090db7;  Cor verde */
+        transition: color 0.3s ease; /* Transição suave */
+        text-decoration: none;
+        padding: 2vw;
+      }
+      
+      .navbar-right-custom-top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .search-form-custom-top-header {
+        display: flex;
+        flex-wrap: nowrap; /* Impede a quebra de linha */
+      }
+      
+      .search-form-custom-top-header input[type="text"] {
+        padding: 5px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+      }
+      
+      .search-form-custom-top-header button {
+        padding: 5px 10px;
+        background-color: #666;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        color: #fff;
+      }
+        
+      /* Responsive styles */
+      @media screen and (max-width: 768px) {
+        .navbar-custom-top-header {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .navbar-left-custom-top-header, .navbar-right-custom-top-header {
+          /* width: 100%; */
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      
+        .navbar-right-custom-top-header {
+          order: -1; /* Move the search bar above the links */
+        }
+      
+        .search-form-custom-top-header {
+          width: 100%;
+          /*flex-direction: row; /* Alterado para row */
+          /*justify-content: space-between;  Novo */
+          justify-content: center;
+        }
+      
+        .search-form-custom-top-header input[type="text"], .search-form-custom-top-header button {
+          width: calc(50% - 5px); /* Metade do espaço com 5px de margem entre eles */
+          margin-bottom: 0; /* Remover margem inferior */
+          border-radius: 5px;
+        }
+      
+        .navbar-left-custom-top-header, .navbar-right-custom-top-header {
+          justify-content: space-around; /* Alterado para space-around */
+        }
+      }
+
+      /* CAROUSEL */
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        /* max-width: 1000px; */
+        position: relative;
+        margin: auto;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+      .carousel-image {
+        width: 100%; /* A imagem preencherá a largura do contêiner */
+        height: 23rem; /* Altura fixa ou ajuste conforme necessário */
+        object-fit: cover ; /* Corta as bordas da imagem e mantém o aspecto */
+        overflow: hidden; /* Esconde o excesso da imagem fora das bordas */
+      }
+
+    </style>  
+    <section class="py-5">
+      <div class="container px-lg-5 mt-5">
+        <div id="itensProdutos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <button id="btnVerMais" class="btn btn-outline-dark mt-auto " type="submit" onclick="loja.metodos.verMais()">
+          Veja Mais
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="text-center" style="text-decoration:none;">
+          <a href="https://www.facebook.com/dm.adesivoss" target="_blank" class="social-icon-footer">
+            <span class="social-ico-icon">
+              <i class="text-white bi bi-facebook"></i>
+            </span>
+          </a>
+          <a href="https://api.whatsapp.com/message/3W6RV5ZMBSXMO1?autoload=1&app_absent=0" target="_blank" class="social-icon-footer">
+            <span class="social-ico-icon">
+              <i class="text-white bi bi-whatsapp"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/dmadesivoss/" target="_blank" class="social-icon-footer">
+            <span class="social-ico-icon">
+              <i class="text-white bi bi-instagram"></i>
+            </span>
+          </a>
+        </div>
+        <p class="m-0 text-center text-white">Copyright © 2024 Rugido Digital | 
+          <a class="text-white" href="https://www.instagram.com/rgdo.agencia/">
+            Designed by Rugido Digital
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/dados.js"></script>
+    <script type="text/javascript" src="js/carrinho.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
