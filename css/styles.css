@@ -11329,7 +11329,7 @@ form {
     text-align: center;
   }
 }
-@media (max-width: 334px) {
+@media (max-width: 356px) {
   .logo {
     display: flex;
     flex: 1;

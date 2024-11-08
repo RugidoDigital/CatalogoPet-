@@ -6,7 +6,7 @@ var loja = {};
 
 var MEU_ENDERECO = null;
 
-var CELULAR_EMPRESA = '5592992577657'
+var CELULAR_EMPRESA = '5592992120429'
 
 // Adição de (xx) e - automático
 const tel = document.getElementById('txtTelefone') // Seletor do campo de telefone
