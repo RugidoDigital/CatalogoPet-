@@ -201,29 +201,25 @@ loja.metodos = {
     obterItensPorTag: ( value ) => {
         var categorias, sub_categoria = []
         switch (value) {
-            case 0:
-                categorias = ['MADEIRAS','PEDRAS','METAL','TELADO','PISOMAX','DIVERSOS'];
-              break;
-
             case 1:
-                categorias = ['MADEIRAS'];
+                categorias = ['CACHORROS'];
               break;
 
             case 2:
-                categorias =['PEDRAS'];
-              break;
+                categorias = ['GATOS'];
+            break;
 
             case 3:
-                categorias = ['METAL'];
+                categorias = ['PASSAROS'];
             break;
 
             case 4:
-                categorias = ['TELADO'];
+                categorias = ['PEIXES'];
             break;
 
             case 5:
-                categorias = ['PISOMAX'];
-            break;
+                categorias = ['CACHORROS','GATOS','PASSAROS','PEIXES'];
+              break;
 
             default:
           }
