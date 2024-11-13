@@ -7,19 +7,10 @@ button.onclick = function() {
     window.location.href = "carrinho.html";
 };
 
+
 // window.onscroll = function() {
 //     var header = document.getElementById("filtro"); // Barra-Fixa da navbar id='fildro'
 //     var sticky = header.offsetTop; // Barra-Fixa
-
-//     var floatButton = document.querySelector('.float-button');
-//     if (document.documentElement.scrollTop > 165 && window.pageYOffset > sticky) { // Exibe o botão após rolar 200px
-//         floatButton.style.display = 'block'; // Botao carrinho float (habilitado)
-//         header.classList.add("sticky"); // Navbar fixa (Ativado)
-//     } else {
-//         floatButton.style.display = 'none'; // Botao carrinho float (desabilitado)
-//         header.classList.remove("sticky"); // Navbar fixa (Desativado)
-//     }
-// };
 
 document.addEventListener("DOMContentLoaded", function () {
     const filterSection = document.querySelector("#filter");
@@ -30,15 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentScrollY = window.scrollY;
         const carouselBottom = carousel.offsetHeight;
         var floatButton = document.querySelector('.float-button');// BOTÂO DE CARRINHO SCROLL
-
+        // var floatPetzap = document.querySelector('.float-petzap');
         // Verificar se o usuário está rolando para baixo e passou o carousel
         if (currentScrollY > carouselBottom) {
             floatButton.style.display = 'block'; // Botao carrinho float (habilitado)
+            // floatPetzap.style.display = 'block';
             filterSection.classList.add("categories-fixed");
         } 
         // Se o usuário rolar para cima, desfixa
         else if (currentScrollY <= carouselBottom) {
             floatButton.style.display = 'none'; // Botao carrinho float (desabilitado)
+            // floatPetzap.style.display = 'none';
             filterSection.classList.remove("categories-fixed");
         }
 

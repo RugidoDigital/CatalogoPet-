@@ -16,36 +16,46 @@
   <body>
 
     <!-- Header / Barra de navegação -->
-    <header class="navbar container px-6">
-      <div class="logo">
-          <a href="index.html" class="navbar-brand">
-            <img width="70px" src="assets/ICONE.png" alt="Pet+"> 
-          </a>
-      </div>
-      <div class="search-bar search-form-custom-top-header">
-        <div class="input-group" style="border-radius: 20px; border: 1px solid #bdbdbd; margin: 5px;">
-          <input id="inputPesquisa" type="text" class="form-control" placeholder="Pesquisar..." style="border: 0; border-radius: 20px;">
-          <span id="basic-addon1" type="button" class="btn btn-success rounded-circle" style="width: 40px; height: 40px; background-color: #0dcaf0; border: 0" onclick="loja.metodos.obterItensPorPesquisa()">
-            <i class="bi bi-search"></i>
-          </span>
+    
+    <header>
+      <img src="/assets/assets_img/faicha.png" class="img_Header" alt="">
+      <div class="navbar container px-6">
+        <div class="logo">
+            <a href="index.html" class="navbar-brand">
+              <img width="70px" src="assets/ICONE.png" alt="Pet+"> 
+            </a>
+        </div>
+        <div class="search-bar search-form-custom-top-header">
+          <div class="input-group" style="border-radius: 20px; border: 1px solid #bdbdbd; margin: 5px;">
+            <input id="inputPesquisa" type="text" class="form-control" placeholder="Pesquisar..." style="border: 0; border-radius: 20px;">
+            <span id="basic-addon1" type="button" class="btn btn-success rounded-circle" style="width: 40px; height: 40px; background-color: #0dcaf0; border: 0" onclick="loja.metodos.obterItensPorPesquisa()">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </div>
+        <!-- Ícones -->
+        <div class="icons">
+          <form style="display: flex; justify-content: center; text-align: center;" action="carrinho.html">
+              <button type="submit" class="btn btn-info btn-group text-white">
+                  <i class="bi bi-cart-fill"></i>
+                  <span class="d-none d-lg-inline">Carrinho </span>
+                  <span class="badge text-bg-danger" id="badgeCart"></span>
+              </button>
+              <a href="#" class="btn btn-info text-white"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/lojaspetmais/" target="_blank" class="btn btn-info text-white"><i class="bi bi-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=559284001860" target="_blank" class="btn btn-info text-white"><i class="bi bi-whatsapp"></i></a>
+          </form>
         </div>
       </div>
-      <!-- Ícones -->
-      <div class="icons">
-        <form style="display: flex; justify-content: center; text-align: center;" action="carrinho.html">
-            <button type="submit" class="btn btn-info btn-group text-white">
-                <i class="bi bi-cart-fill"></i>
-                <span class="d-none d-lg-inline">Carrinho </span>
-                <span class="badge text-bg-danger" id="badgeCart"></span>
-            </button>
-            <a href="#" target="_blank" class="btn btn-info text-white"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/lojaspetmais/" target="_blank" class="btn btn-info text-white"><i class="bi bi-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=559284001860&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-info text-white"><i class="bi bi-whatsapp"></i></a>
-        </form>
-      </div>
+      
+      
     </header>
     
     <!-- Header-->
+    <a href="https://api.whatsapp.com/send/?phone=559284001860" class="float-petzap custom-button-petzap"
+      target="_blank" type="submit" id="float-button-petzap">
+      <img src="/assets/assets_img/pet-zap.png" alt="" width="100%">
+    </a>
     <button class="float-button custom-button btn-lg" type="submit" id="float-button-carrinho">
       <i class="bi-cart-fill me-1"></i>
       <span class="badge" id="badgeCartFloat">0</span>
@@ -448,21 +458,22 @@
     <footer class="py-5 bg-dark">
       <div class="container">
         <div class="text-center" style="text-decoration:none;">
-          <a href="https://www.facebook.com/dm.adesivoss" target="_blank" class="social-icon-footer">
+          <a href="#" class="social-icon-footer">
             <span class="social-ico-icon">
               <i class="text-white bi bi-facebook"></i>
             </span>
           </a>
-          <a href="https://api.whatsapp.com/message/3W6RV5ZMBSXMO1?autoload=1&app_absent=0" target="_blank" class="social-icon-footer">
+          <a href="https://api.whatsapp.com/send/?phone=559284001860" target="_blank" class="social-icon-footer">
             <span class="social-ico-icon">
               <i class="text-white bi bi-whatsapp"></i>
             </span>
           </a>
-          <a href="https://www.instagram.com/dmadesivoss/" target="_blank" class="social-icon-footer">
+          <a href="https://www.instagram.com/lojaspetmais/" target="_blank" class="social-icon-footer">
             <span class="social-ico-icon">
               <i class="text-white bi bi-instagram"></i>
             </span>
-          </a>
+          </a>  
+          <script src="/css/footer.css"></script>
         </div>
         <p class="m-0 text-center text-white">Copyright © 2024 Rugido Digital | 
           <a class="text-white" href="https://www.instagram.com/rgdo.agencia/">

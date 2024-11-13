@@ -73,7 +73,7 @@ loja.metodos = {
 
         for (var i = 0; i < itens.length; i++) {
             let preco = parseFloat(itens[i].preco).toFixed(2).replace('.', ',');
-            let metragem = parseFloat(itens[i].metragemSelect); // Metragem selecionada
+            // let metragem = parseFloat(itens[i].metragemSelect); Metragem selecionada
             let quantItem = parseInt(itens[i].quantidade); // Quantidade selecionada
             let valorMetragem = (parseFloat(itens[i].preco) * metragem * quantItem).toFixed(2).replace('.', ','); // Valor do produto com base na metragem
             console.log("Valor Unitário: ", valorMetragem); // Tá escrito valorMetragem, mas também faz a function de calc. a quantidade e apresentar o valor total 

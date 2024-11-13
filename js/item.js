@@ -10,10 +10,13 @@ button.onclick = function() {
 window.onscroll = function() {
 
     var floatButton = document.querySelector('.float-button');
+    var floatPetzap = document.querySelector('.float-petzap');
     if (document.documentElement.scrollTop > 100) { // Exibe o botão após rolar 200px
         floatButton.style.display = 'block'; // Botao carrinho float (habilitado)
+        floatPetzap.style.display = 'block';
     } else {
         floatButton.style.display = 'none'; // Botao carrinho float (desabilitado)
+        floatPetzap.style.display = 'none';
     }
 };
 
@@ -51,6 +54,7 @@ loja.metodos = {
         .replace(/\${price}/g, preco)
         .replace(/\${marca}/g, item[4])
         .replace(/\${largura}/g, item[5])
+        .replace(/\${categoria}/g, item[6])
     
         // Adiciona os itens ao #itensProduto
         $("#itensProduto").append(temp);
@@ -64,13 +68,13 @@ loja.metodos = {
     const valorProduto = parseFloat(item[3]); // Preço de 1 metro do produto
 
     // Obtendo a metragem selecionada pelo usuário
-    const metragemSelect = parseFloat(document.getElementById('metros').value);
+    // const metragemSelect = parseFloat(document.getElementById('metros').value);
 
     // Obtendo a quantidade selecionada pelo usuário
     const quantidade = parseInt(document.getElementById('inputQuantity').innerText); // Certifique-se de que este campo existe no HTML
 
     // Calculando o preço total com base na metragem e na quantidade
-    const precoTotal = (valorProduto * metragemSelect * quantidade);
+    const precoTotal = (valorProduto * quantidade);// * metragemSelect
 
     // Atualizando o valor na tela
     document.getElementById('preco').innerText = `${precoTotal.toFixed(2)}`; // Preço total formatado
@@ -103,6 +107,7 @@ loja.metodos = {
                 .replace(/\${price}/g, itens[i].price)
                 .replace(/\${marca}/g, itens[i].marca)
                 .replace(/\${largura}/g, itens[i].largura)
+                .replace(/\${categoria}/g, itens[i].categoria)
     
             // Adiciona os itens ao #itensProdutos
             $("#itensProdutos").append(temp);
@@ -130,7 +135,7 @@ loja.metodos = {
 
         let quantityLabel = document.getElementById('inputQuantity');
         quantidade = parseInt(quantityLabel.textContent);
-        let metragemSelect = parseFloat(document.getElementById('metros').value);
+        // let metragemSelect = parseFloat(document.getElementById('metros').value);
         id = (parseInt(value)) - 1
         var itemParaAdicionar = MENU[id];
         carrinhoDeCompras.adicionarItem({
@@ -139,8 +144,8 @@ loja.metodos = {
             name: itemParaAdicionar.name,
             preco: itemParaAdicionar.price,
             quantidade: quantidade,
-            metragemSelect: metragemSelect,
-            valUnit: metragemSelect
+            // metragemSelect: metragemSelect,
+            // valUnit: metragemSelect
         });
 
         carrinhoDeCompras.salvarCarrinho();
@@ -277,7 +282,7 @@ loja.templates = {  // R$ \${price}
                                     <span class="currency">R$</span>
                                     <span class="value me-3" id="preco">\${price}</span>
                                 </span>
-                                <div class="m-2">
+                                <!-- <div class="m-2">
                                     <select id="metros" onchange="loja.metodos.atualizarPreco(\${id})" class="form-select" aria-label="Default select example">
                                         <option value="1">1.00m x 1.22m</option>
                                         <option value="1.5">1.50m x 1.22m</option>
@@ -299,7 +304,7 @@ loja.templates = {  // R$ \${price}
                                         <option value="9.5">9.50m x 1.22m</option>
                                         <option value="10">10.0m x 1.22m</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="product-quantity p-2">
                                 <p class="quantity-label-item">Quantidade: </p>
@@ -317,10 +322,12 @@ loja.templates = {  // R$ \${price}
                                 <p>Sobre este item</p>
                                 <ul>
                                     <li>Largura: \${largura}</li>
-                                    <li>Impermeável</li>
+                                    <li>Marca: \${marca}</li>
+                                    <li>Categoria: \${categoria}</li>
+                                    <!-- <li>Impermeável</li>
                                     <li>Lavável</li>
                                     <li>Antibacteriano</li>
-                                    <li>Auto colante</li>
+                                    <li>Auto colante</li> -->
                                 </ul>
                             </div>
                             <button class="add-to-cart-btn tolltip m-2" 

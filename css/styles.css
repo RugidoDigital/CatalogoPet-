@@ -317,6 +317,14 @@ svg {
   vertical-align: middle;
 }
 
+header img.img_Header {
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 10px;/* PERMITE QUE A IMAGEM MANTENHA ESSA LARGURA MESMO NO MOBILE */
+  
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse;
@@ -11362,7 +11370,7 @@ form {
   background-color: #090db7;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 14px 17px;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 32px;
@@ -11374,6 +11382,23 @@ form {
   color: #090db7;
   border-color: #090db7;
   background-color: white;
+}
+
+.custom-button-petzap {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  transition: border-color 0.3s ease;
+
+}
+
+.custom-button-petzap:hover {
+  color: #090db7;
+  border-color: #090db7;
+  background-color: white;
+  padding: 2px 2px 2px 2px;
 }
 
 .icon, .custom-button-text, .badge {
@@ -11471,13 +11496,12 @@ form {
 }
 
 /* estilo do botão flutuante */
-
 .float-button {
   display: none; /* Inicialmente escondido */
   position: fixed;
   /* top: 250px; */
-  bottom: 50px;
-  /* right: 20px; */
+  bottom: 120px;
+  /* left: 20px; */
   right: 20px;
   width: 50px;
   height: 50px;
@@ -11489,7 +11513,29 @@ form {
   z-index: 1000; /* Sobrepõe os demais elementos */
   transition: background-color 0.3s ease;
   transition: opacity 0.7s ease; /* Transição suave */
+}
 
+.float-button:hover {
+  background-color: #e6b800;
+}
+
+.float-petzap {
+  display: block; /* Inicialmente escondido */
+  position: fixed;
+  /* top: 400px; */
+  bottom: 50px;
+  /* left: 20px; */
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #6eff00;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Sobrepõe os demais elementos */
+  transition: background-color 0.3s ease;
+  transition: opacity 0.7s ease; /* Transição suave */
 }
 
 .float-button:hover {
