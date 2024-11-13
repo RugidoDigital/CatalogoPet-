@@ -76,12 +76,21 @@ loja.metodos = {
     // Calculando o preço total com base na metragem e na quantidade
     const precoTotal = (valorProduto * quantidade);// * metragemSelect
 
+    // Formatando o preço total para o formato brasileiro (R$)
+    const precoTotalFormatado = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    }).format(precoTotal);
+
+    // Adiciona o espaço após 'R$' para o formato correto
+    const valorComEspaco = precoTotalFormatado.replace('R$', '');
+
     // Atualizando o valor na tela
-    document.getElementById('preco').innerText = `${precoTotal.toFixed(2)}`; // Preço total formatado
+    document.getElementById('preco').innerText = valorComEspaco; // Preço total formatado
 
     // Logs para depuração
     console.log("Valor do produto (por metro):", valorProduto);
-    console.log("Metragem selecionada >>>>>", metragemSelect); // Valor em metros
+    //console.log("Metragem selecionada >>>>>", metragemSelect);  Valor em metros
     console.log("Quantidade selecionada >>>>>", quantidade); // Quantidade de itens
     console.log("Preço total >>>>>", precoTotal); // Preço total calculado
     },
