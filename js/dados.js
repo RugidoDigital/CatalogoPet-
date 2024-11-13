@@ -7,7 +7,7 @@ var  MENU = [
         "categoria": "PEIXES",
         "sub_categoria": "ACESSORIOS",
         "price": 5.20,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 21.13,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 400.00,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 2.42,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.5,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 7,
@@ -67,7 +67,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 17,
@@ -167,7 +167,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 18,
@@ -177,7 +177,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 19,
@@ -187,7 +187,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 20,
@@ -197,7 +197,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 21,
@@ -207,7 +207,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 97.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 22,
@@ -217,7 +217,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 23,
@@ -227,7 +227,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 24,
@@ -237,7 +237,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 25,
@@ -247,7 +247,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 26,
@@ -257,7 +257,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 27,
@@ -267,7 +267,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 28,
@@ -277,7 +277,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 29,
@@ -287,7 +287,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 57.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 30,
@@ -297,7 +297,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 31,
@@ -307,7 +307,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 32,
@@ -317,7 +317,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 33,
@@ -327,7 +327,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 34,
@@ -337,7 +337,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 102.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 35,
@@ -347,7 +347,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 102.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 36,
@@ -357,7 +357,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 102.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 37,
@@ -367,7 +367,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 102.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 38,
@@ -377,7 +377,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 112.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 39,
@@ -387,7 +387,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 112.65,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 40,
@@ -397,7 +397,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 112.90,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 41,
@@ -407,7 +407,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 114.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 42,
@@ -417,7 +417,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 114.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 43,
@@ -427,7 +427,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 114.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 44,
@@ -437,7 +437,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 114.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 45,
@@ -447,7 +447,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 46,
@@ -457,7 +457,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 47,
@@ -467,7 +467,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 48,
@@ -477,7 +477,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 49,
@@ -487,7 +487,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 50,
@@ -497,7 +497,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     },
     {
         "id": 51,
@@ -507,7 +507,7 @@ var  MENU = [
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
-        "largura": ""
+        "medida": ""
     }
     // {
     //     "id": 52,
@@ -517,7 +517,7 @@ var  MENU = [
     //     "categoria": "CACHORRO",
     //     "sub_categoria": "",
     //     "price": 54.50,
-    //     "largura": ""
+    //     "medida": ""
     // }
     // {
     //     "id": 53,
@@ -527,7 +527,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": ,
-    //     "largura": ""
+    //     "medida": ""
     // },
     // {
     //     "id": 54,
@@ -537,7 +537,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": ,
-    //     "largura": ""
+    //     "medida": ""
     // },
     // {
     //     "id": 55,
@@ -547,7 +547,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": ,
-    //     "largura": ""
+    //     "medida": ""
     // },
     // {
     //     "id": 56,
@@ -557,7 +557,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": ,
-    //     "largura": ""
+    //     "medida": ""
     // },
     // {
     //     "id": 57,
@@ -567,7 +567,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": 62.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 58,
@@ -577,7 +577,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": 62.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 59,
@@ -587,7 +587,7 @@ var  MENU = [
     //     "categoria": "MADEIRAS",
     //     "sub_categoria": "",
     //     "price": 62.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 60,
@@ -597,7 +597,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": ,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 61,
@@ -607,7 +607,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 62,
@@ -617,7 +617,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 63,
@@ -627,7 +627,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 64,
@@ -637,7 +637,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 65,
@@ -647,7 +647,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 66,
@@ -657,7 +657,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 67,
@@ -667,7 +667,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
     // {
     //     "id": 68,
@@ -677,7 +677,7 @@ var  MENU = [
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
     //     "price": 65.9,
-    //     "largura": "1.22M"
+    //     "medida": "1.22M"
     // },
 ];
 5.20

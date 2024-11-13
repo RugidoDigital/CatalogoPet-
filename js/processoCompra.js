@@ -41,7 +41,7 @@ loja.metodos = {
             let preco = parseFloat(itens[i].preco).toFixed(2).replace('.', ',');
             let metragem = parseFloat(itens[i].metragemSelect); // Metragem selecionada
             let quantItem = parseInt(itens[i].quantidade); // Quantidade selecionada
-            let valorMetragem = (parseFloat(itens[i].preco) * metragem * quantItem).toFixed(2).replace('.', ','); // Valor do produto com base na metragem
+            let valorMetragem = (parseFloat(itens[i].preco) * quantItem).toFixed(2).replace('.', ','); // * metragem Valor do produto com base na metragem
             console.log("Valor Unitário: ", valorMetragem); // Tá escrito valorMetragem, mas também faz a function de calc. a quantidade e apresentar o valor total 
             let temp = loja.templates.itemCarrinho
                 .replace(/\${img}/g, itens[i].img)
@@ -49,7 +49,7 @@ loja.metodos = {
                 .replace(/\${id}/g, itens[i].id)
                 .replace(/\${qtd}/g, itens[i].quantidade)
                 .replace(/\${price}/g, preco) // Preço unitário
-                .replace(/\${largura}/g, metragem) // Metragem selecionada
+                .replace(/\${medida}/g, metragem) // Metragem selecionada
                 .replace(/\${valorMetragem}/g, valorMetragem); // Valor total com a metragem
     
             // Adiciona os itens ao #itensProdutos
@@ -148,8 +148,8 @@ loja.templates = {
                 <div class="description">
                     <!-- Nome do produto -->
                     <h6>\${name}</h6>
-                    <!-- Metragem do produto -->
-                    <h2>Metragem: \${largura}m² x 1,22m²</h2>
+                    <!-- Medida do produto
+                    <h2>Metragem: \${medida}m² x 1,22m²</h2> -->
                     <!-- Preço do produto -->
                     <p class="fw-bolder">
                         <h5>

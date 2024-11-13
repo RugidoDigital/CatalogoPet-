@@ -10,13 +10,13 @@ button.onclick = function() {
 window.onscroll = function() {
 
     var floatButton = document.querySelector('.float-button');
-    var floatPetzap = document.querySelector('.float-petzap');
+    // var floatPetzap = document.querySelector('.float-petzap');
     if (document.documentElement.scrollTop > 100) { // Exibe o botão após rolar 200px
         floatButton.style.display = 'block'; // Botao carrinho float (habilitado)
-        floatPetzap.style.display = 'block';
+        // floatPetzap.style.display = 'block';
     } else {
         floatButton.style.display = 'none'; // Botao carrinho float (desabilitado)
-        floatPetzap.style.display = 'none';
+        // floatPetzap.style.display = 'none';
     }
 };
 
@@ -44,7 +44,7 @@ loja.metodos = {
 
         loja.metodos.getProximosElementos(parseInt(item[2]) - 1);
         
-        let preco = parseFloat(item[3]).toFixed(2);
+        let preco = parseFloat(item[3]).toFixed(3);
         preco = preco.replace('.', ',');
 
         let temp = loja.templates.item
@@ -53,7 +53,7 @@ loja.metodos = {
         .replace(/\${id}/g, item[2])
         .replace(/\${price}/g, preco)
         .replace(/\${marca}/g, item[4])
-        .replace(/\${largura}/g, item[5])
+        .replace(/\${medida}/g, item[5])
         .replace(/\${categoria}/g, item[6])
     
         // Adiciona os itens ao #itensProduto
@@ -106,7 +106,7 @@ loja.metodos = {
                 .replace(/\${price}/g, preco)
                 .replace(/\${price}/g, itens[i].price)
                 .replace(/\${marca}/g, itens[i].marca)
-                .replace(/\${largura}/g, itens[i].largura)
+                .replace(/\${medida}/g, itens[i].medida)
                 .replace(/\${categoria}/g, itens[i].categoria)
     
             // Adiciona os itens ao #itensProdutos
@@ -251,17 +251,15 @@ loja.metodos = {
 loja.templates = {  // R$ \${price}
                 
     item: `
-        
-
-        <div class="card mb-3" style="border: 0;">
+    <div class="card mb-3" style="border: 0;">
         <div class="product-actions">
-                                <form class="mb-3" action="index.html">
-                                    <button class="btn btn-outline-dark" type="submit">
-                                        <i class="bi bi-arrow-left-square-fill me-2"></i>
-                                        Continuar Comprando
-                                    </button>
-                                </form> 
-                            </div>
+            <form class="mb-3" action="index.html">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi bi-arrow-left-square-fill me-2"></i>
+                    Continuar Comprando
+                </button>
+            </form> 
+        </div>
             <div class="row g-0">
                 <div class="col-md-6">
                     <img class="card-img-top mb-5 mb-md-0 img-fluid rounded-start" src="\${img}" alt="..." />
@@ -321,13 +319,9 @@ loja.templates = {  // R$ \${price}
                             <div class="product-description p-2">
                                 <p>Sobre este item</p>
                                 <ul>
-                                    <li>Largura: \${largura}</li>
                                     <li>Marca: \${marca}</li>
                                     <li>Categoria: \${categoria}</li>
-                                    <!-- <li>Impermeável</li>
-                                    <li>Lavável</li>
-                                    <li>Antibacteriano</li>
-                                    <li>Auto colante</li> -->
+                                    <!-- <li>Medida: \${medida}</li> -->
                                 </ul>
                             </div>
                             <button class="add-to-cart-btn tolltip m-2" 
@@ -353,7 +347,7 @@ loja.templates = {  // R$ \${price}
                         <div class="product-description">
                             <h5>Sobre este item:</h5>
                             <ul>
-                                <li>Largura : \${largura}</li>
+                                <li>Medida : \${medida}</li> 
                                 <li>Impermeável</li>
                                 <li>Lavável</li>
                                 <li>Antibacteriano</li>
@@ -378,7 +372,7 @@ loja.templates = {  // R$ \${price}
             <!-- Product actions-->
             <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
                 <div class="text-center">
-                <a class="custom-button mt-auto" href="item.html"onclick="loja.metodos.verPaginaDoItem(['\${img}','\${name}','\${id}',parseFloat('\${price}'.replace(',','.')),'\${marca}','\${largura}'])"
+                <a class="custom-button mt-auto" href="item.html"onclick="loja.metodos.verPaginaDoItem(['\${img}','\${name}','\${id}',parseFloat('\${price}'.replace(',','.')),'\${marca}','\${medida}','\${categoria}'])"
                 >Comprar</a></div>
             </div>
         </div>
