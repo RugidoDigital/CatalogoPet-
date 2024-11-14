@@ -106,87 +106,85 @@
             border-radius: 30px;
             z-index: 10;
         }
-        /* Cor mais escura no hover */
-        /* Efeito de hover no botão */
-        /* .styled-button:hover {
-            
-        } */
-        
         /* Efeito de "salto" no ícone */
         .styled-button:hover .icon {
             transform: translateY(-8px); /* Sobe o ícone */
         }
       </style>
-      <nav id="filtro" class="container navbar navbar-expand-lg" style="z-index: 2;">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100">
-              <!-- <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(0)">
-                    <span>
-                      <i class="icon bi bi-cart"></i>
-                    </span>
-                    <b class="text-dark">Todos</b>
-                  </a>
-                </div>
-              </li> -->
-              <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(1)">
-                    <span>
-                      <img class="icon" src="/assets/categoria_icon/icon-cachorro.png" width="50" alt="">
-                    </span>
-                    <b class="text-danger">Cachorro</b>
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(2)">
-                    <span>
-                      <img class="icon" src="/assets/categoria_icon/icon-gato.png" width="50" alt="">
-                    </span></i>
-                    <b style="color: gold;">Gatos</b>
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(3)">
-                    <span>
-                      <img class="icon" src="/assets/categoria_icon/icon-passaro.png" width="50" alt="">
-                    </span></i>
-                    <b class="text-info">Pássaros</b>
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(4)">
-                    <span>
-                      <img class="icon" src="/assets/categoria_icon/icon-peixe.png" width="50" alt="">
-                    </span></i>
-                    <b style="color: orange">Peixes</b>
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group styled-button">
-                  <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(5)">
-                    <span>
-                      <img class="icon" src="/assets/categoria_icon/+.png" width="50" alt="">
-                    </span></i>
-                    <b style="color: cornflowerblue">Categorias</b>
-                  </a>
-                </div>
-              </li>
-            </ul>
+      <nav id="filtro">
+        <img src="/assets/assets_img/faicha.png" class="img_NavbarFilter" alt="">
+        <div class="container navbar navbar-expand-lg" style="z-index: 2;">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100">
+                <!-- <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(0)">
+                      <span>
+                        <i class="icon bi bi-cart"></i>
+                      </span>
+                      <b class="text-dark">Todos</b>
+                    </a>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(1)">
+                      <span>
+                        <img class="icon" src="/assets/categoria_icon/icon-cachorro.png" width="50" alt="">
+                      </span>
+                      <b class="text-danger">Cachorro</b>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(2)">
+                      <span>
+                        <img class="icon" src="/assets/categoria_icon/icon-gato.png" width="50" alt="">
+                      </span></i>
+                      <b style="color: gold;">Gatos</b>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(3)">
+                      <span>
+                        <img class="icon" src="/assets/categoria_icon/icon-passaro.png" width="50" alt="">
+                      </span></i>
+                      <b class="text-info">Pássaros</b>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(4)">
+                      <span>
+                        <img class="icon" src="/assets/categoria_icon/icon-peixe.png" width="50" alt="">
+                      </span></i>
+                      <b style="color: orange">Peixes</b>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="btn-group styled-button">
+                    <a class="nav-link" href="#filter" onclick="loja.metodos.obterItensPorTag(5)">
+                      <span>
+                        <img class="icon" src="/assets/categoria_icon/+.png" width="50" alt="">
+                      </span></i>
+                      <b style="color: cornflowerblue">Categorias</b>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        
       </nav>
     
     </section>

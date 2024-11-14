@@ -322,7 +322,12 @@ header img.img_Header {
   top: 0;
   width: 100%;
   height: 10px;/* PERMITE QUE A IMAGEM MANTENHA ESSA LARGURA MESMO NO MOBILE */
-  
+}
+nav img.img_NavbarFilter {
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 10px;/* PERMITE QUE A IMAGEM MANTENHA ESSA LARGURA MESMO NO MOBILE */
 }
 
 table {
@@ -11930,7 +11935,6 @@ figure.effect-milo:hover figcaption {
 .categories {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .categories a {
