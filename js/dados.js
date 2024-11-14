@@ -23,7 +23,7 @@ var  MENU = [
         "id": 3,
         "marca": "OH MY DOG",
         "name": "60.06 - CAMA LISA TIFFANY TAMANHO M",
-        "img": "assets/img_produtos/CAMA_LISA_TIFFANY)TAMANHO_M.webp",
+        "img": "assets/img_produtos/CAMA_LISA_TIFFANY_TAMANHO_M.webp",
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 400.00,
@@ -33,7 +33,7 @@ var  MENU = [
         "id": 4,
         "marca": "KADI",
         "name": "8IN1 OSSO MINI UNITARIO 12GR 65179",
-        "img": "assets/img_produtos/A142_Vestido_Oh_My_Donut_Tamanho_OMD.webp",
+        "img": "assets/img_produtos/A142_Vestido_Oh_My_Donut_Tamanho_OMD_GG.webp",
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 2.42,
@@ -43,7 +43,7 @@ var  MENU = [
         "id": 5,
         "marca": "OH MY DOG",
         "name": "A142 - Vestido Oh My Donut! Tamanho OMD:GG",
-        "img": "assets/img_produtos/A142_Vestido_Oh_My_Donut_Tamanho_OMD.webp",
+        "img": "assets/img_produtos/A142_Vestido_Oh_My_Donut_Tamanho_OMD_GG.webp",
         "categoria": "CACHORROS",
         "sub_categoria": "ACESSORIOS",
         "price": 63.5,
@@ -508,101 +508,161 @@ var  MENU = [
         "sub_categoria": "ACESSORIOS",
         "price": 54.50,
         "medida": ""
-    }
+    },
+    {
+        "id": 52,
+        "marca": "OH MY DOG",
+        "name": "B174 - Camiseta Brigadeiro Tamanho OMD:P",
+        "img": "",
+        "categoria": "CACHORRO",
+        "sub_categoria": "",
+        "price": 54.50,
+        "medida": ""
+    },
+    {
+        "id": 53,
+        "marca": "ROYAL CANIN",
+        "name": "ACC - INDOOR.27 0,4 KG - SC",
+        "img": "assets/img_produtos/ACC_INDOOR_27_0.4%20KG_SC.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "RAÇÂO",
+        "price": 11.55,
+        "medida": ""
+    },
+    {
+        "id": 54,
+        "marca": "ROYAL CANIN",
+        "name": "ACC - LIGHT.40 7,5KG - SC 7,5KG",
+        "img": "assets/img_produtos/ACC_LIGHT_40_7.5KG_SC.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "RAÇÂO",
+        "price": 83.75,
+        "medida": ""
+    },
+    {
+        "id": 55,
+        "marca": "ROYAL CANIN",
+        "name": "ACC - PERSIAN.30 7,5KG - SC 7,5KG",
+        "img": "assets/img_produtos/ACC_PERSIAN_30_7.5KG_SC.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "RAÇÂO",
+        "price": 137.57,
+        "medida": ""
+    },
+    {
+        "id": 56,
+        "marca": "ROYAL CANIN",
+        "name": "ACC - PREMIUM CAT AD VITALIDADE 1KG-SC 1",
+        "img": "assets/img_produtos/ACC_PREMIUM_CAT_AD_VITALIDADE_1KG_SC_1.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "RAÇÂO",
+        "price": 29.73,
+        "medida": ""
+    },
+    {
+        "id": 57,
+        "marca": "ROYAL CANIN",
+        "name": "ACC FCN APPETI CONTROL WET 85G - UN 85 G",
+        "img": "assets/img_produtos/ACC_FCN_APPETI_CONTROL_WET_85G.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "PETISCOS, MOLHOS E PATES",
+        "price": 5.37,
+        "medida": ""
+    },
+    {
+        "id": 58,
+        "marca": "ROYAL CANIN",
+        "name": "ACC FCN DIGEST SENSITI WET 85G - UN 85 G",
+        "img": "assets/img_produtos/ACC_FCN_DIGEST_SENSITI_WET_85G_UN.webp",
+        "categoria": "GATOS",
+        "sub_categoria": "PETISCOS, MOLHOS E PATES",
+        "price": 5.37,
+        "medida": ""
+    },
+    {
+        "id": 59,
+        "marca": "ALCON PET",
+        "name": "ALCON CLUB PAPA FILH PSITACIDEOS 160G",
+        "img": "assets/img_produtos/ALCON_CLUB_PAPA_FILH_PSITACIDEOS_160G.webp",
+        "categoria": "PASSAROS",
+        "sub_categoria": "RAÇÂO",
+        "price": 10.46,
+        "medida": ""
+    },
+    {
+        "id": 60,
+        "marca": "ALCON PET",
+        "name": "ALCON CLUB PARA FILHOTES PASSAROS 16G",
+        "img": "assets/img_produtos/ALCON_CLUB_PAPA_FILH_PSITACIDEOS_160G.webp",
+        "categoria": "PASSAROS",
+        "sub_categoria": "RAÇÂO",
+        "price": 10.6,
+        "medida": ""
+    },
+    {
+        "id": 61,
+        "marca": "ALCON PET",
+        "name": "ALCON BASIC 10G",
+        "img": "assets/img_produtos/ALCON_BASIC_10G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 11.7,
+        "medida": ""
+    },
+    {
+        "id": 62,
+        "marca": "ALCON PET",
+        "name": "ALCON BASIC 20G",
+        "img": "assets/img_produtos/ALCON_BASIC_20G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 12.9,
+        "medida": ""
+    },
+    {
+        "id": 63,
+        "marca": "ALCON PET",
+        "name": "ALCON COLOURS 10G",
+        "img": "assets/img_produtos/ALCON_BASIC_10G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 20.8,
+        "medida": ""
+    },
+    {
+        "id": 64,
+        "marca": "ALCON PET",
+        "name": "ALCON COLOURS 20G",
+        "img": "assets/img_produtos/ALCON_BASIC_20G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 12.4,
+        "medida": ""
+    },
+    {
+        "id": 65,
+        "marca": "ALCON PET",
+        "name": "ALCON KOI 10G",
+        "img": "assets/img_produtos/ALCON_KOI_10G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 22.2,
+        "medida": ""
+    },
+    {
+        "id": 66,
+        "marca": "ALCON PET",
+        "name": "ALCON KOI 20G",
+        "img": "assets/img_produtos/ALCON_KOI_20G.webp",
+        "categoria": "PEIXES",
+        "sub_categoria": "RAÇÂO",
+        "price": 10.6,
+        "medida": ""
+    },
     // {
-    //     "id": 52,
-    //     "marca": "OH MY DOG",
-    //     "name": "B174 - Camiseta Brigadeiro Tamanho OMD:P",
-    //     "img": "",
-    //     "categoria": "CACHORRO",
-    //     "sub_categoria": "",
-    //     "price": 54.50,
-    //     "medida": ""
-    // }
-    // {
-    //     "id": 53,
+    //     "id": 67,
     //     "marca": "Imprimax",
-    //     "name": "A173 - Vestido Boneca Xadrez Tamanho:GG",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": ,
-    //     "medida": ""
-    // },
-    // {
-    //     "id": 54,
-    //     "marca": "Imprimax",
-    //     "name": "A173 - Vestido Boneca Xadrez Tamanho:M",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": ,
-    //     "medida": ""
-    // },
-    // {
-    //     "id": 55,
-    //     "marca": "Imprimax",
-    //     "name": "A173 - Vestido Boneca Xadrez Tamanho:P",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": ,
-    //     "medida": ""
-    // },
-    // {
-    //     "id": 56,
-    //     "marca": "Imprimax",
-    //     "name": "A175 - Vestido Drama Queen Tamanho:G",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": ,
-    //     "medida": ""
-    // },
-    // {
-    //     "id": 57,
-    //     "marca": "Imprimax",
-    //     "name": "A175 - Vestido Drama Queen Tamanho:GG",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": 62.9,
-    //     "medida": "1.22M"
-    // },
-    // {
-    //     "id": 58,
-    //     "marca": "Imprimax",
-    //     "name": "A175 - Vestido Drama Queen Tamanho:M",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": 62.9,
-    //     "medida": "1.22M"
-    // },
-    // {
-    //     "id": 59,
-    //     "marca": "Imprimax",
-    //     "name": "A175 - Vestido Drama Queen Tamanho:P",
-    //     "img": "",
-    //     "categoria": "MADEIRAS",
-    //     "sub_categoria": "",
-    //     "price": 62.9,
-    //     "medida": "1.22M"
-    // },
-    // {
-    //     "id": 60,
-    //     "marca": "Imprimax",
-    //     "name": "A176 - Vestido Potinho de Amor Tamanho:G",
-    //     "img": "",
-    //     "categoria": "PEDRAS",
-    //     "sub_categoria": "",
-    //     "price": ,
-    //     "medida": "1.22M"
-    // },
-    // {
-    //     "id": 61,
-    //     "marca": "Imprimax",
-    //     "name": "A176 - Vestido Potinho de Amor Tamanho:GG",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -610,9 +670,9 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
     // {
-    //     "id": 62,
+    //     "id": 68,
     //     "marca": "Imprimax",
-    //     "name": "A176 - Vestido Potinho de Amor Tamanho:M",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -620,9 +680,9 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
     // {
-    //     "id": 63,
+    //     "id": 67,
     //     "marca": "Imprimax",
-    //     "name": "A176 - Vestido Potinho de Amor Tamanho:P",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -630,9 +690,9 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
     // {
-    //     "id": 64,
+    //     "id": 68,
     //     "marca": "Imprimax",
-    //     "name": "A182 - Vestido Floral Summer Tamanho:G",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -640,9 +700,9 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
     // {
-    //     "id": 65,
+    //     "id": 67,
     //     "marca": "Imprimax",
-    //     "name": "A182 - Vestido Floral Summer Tamanho:GG",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -650,9 +710,129 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
     // {
-    //     "id": 66,
+    //     "id": 68,
     //     "marca": "Imprimax",
-    //     "name": "A182 - Vestido Floral Summer Tamanho:P",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 67,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:G",
+    //     "img": "",
+    //     "categoria": "PEDRAS",
+    //     "sub_categoria": "",
+    //     "price": 65.9,
+    //     "medida": "1.22M"
+    // },
+    // {
+    //     "id": 68,
+    //     "marca": "Imprimax",
+    //     "name": "A187 - Vestido Poa Mia Tamanho OMD:GG",
     //     "img": "",
     //     "categoria": "PEDRAS",
     //     "sub_categoria": "",
@@ -680,56 +860,3 @@ var  MENU = [
     //     "medida": "1.22M"
     // },
 ];
-5.20
-21.13
-400.00
-2.42
-63.50
-57.50
-57.50
-57.50
-57.50
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-97.90
-57.50
-57.50
-57.50
-57.50
-57.50
-57.50
-57.50
-57.50
-63.50
-63.50
-63.50
-63.50
-102.50
-102.50
-102.50
-102.50
-112.90
-112.65
-112.90
-114.50
-114.50
-114.50
-114.50
-54.50
-54.50
-54.50
-54.50
-54.50
-54.50
-54.50
-54.50
-

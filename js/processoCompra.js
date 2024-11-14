@@ -171,7 +171,7 @@ loja.templates = {
               <div class="blog-card">
                 <!-- Imagem do produto -->
                 <div class="meta">
-                    <div class="photo card-img" style="background-image:url(\${img})">
+                    <div class="photo" style="background-image: url(\${img})">
                         <!-- Controle de quantidade -->
                         <div onclick="loja.metodos.obterProdutosCarrinho()" class="quantity-control d-flex justify-content-center align-items-center" style="width: 100px">
                             <button class="btn-cart-control btn-subtract" onclick="loja.metodos.btnSubtract(\${id})">-</button>
